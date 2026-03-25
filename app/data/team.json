@@ -1,0 +1,882 @@
+[
+  {
+    "name": "Laura Méndez",
+    "position": "Desarrolladora Frontend",
+    "skills": [
+      "React",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "TailwindCSS"
+    ],
+    "experience": "5 años trabajando en startups de tecnología, enfocada en interfaces responsivas y experiencia de usuario.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Trabajo remoto",
+      "Proyectos de impacto social",
+      "Aprendizaje continuo en nuevas tecnologías"
+    ]
+  },
+  {
+    "name": "Carlos Romero",
+    "position": "Desarrollador Backend",
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "Docker",
+      "REST APIs"
+    ],
+    "experience": "7 años desarrollando servicios backend robustos para empresas del sector financiero y logístico.",
+    "availability": {
+      "from": "2026-04-15",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Trabajo híbrido",
+      "Proyectos de larga duración",
+      "Arquitecturas escalables"
+    ]
+  },
+  {
+    "name": "Ana Torres",
+    "position": "Diseñadora UX/UI",
+    "skills": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Prototipado",
+      "User Research"
+    ],
+    "experience": "4 años diseñando productos digitales centrados en el usuario para agencias creativas y clientes internacionales.",
+    "availability": {
+      "from": "2026-05-01",
+      "to": "2026-10-31"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Trabajo remoto",
+      "Proyectos creativos",
+      "Colaboración multidisciplinar"
+    ]
+  },
+  {
+    "name": "Miguel Fernández",
+    "position": "DevOps Engineer",
+    "skills": [
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "CI/CD",
+      "Prometheus"
+    ],
+    "experience": "6 años gestionando infraestructuras cloud y pipelines de despliegue continuo en entornos de alta disponibilidad.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Trabajo remoto",
+      "Automatización de procesos",
+      "Entornos cloud-native"
+    ]
+  },
+  {
+    "name": "Sara López",
+    "position": "Data Scientist",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "TensorFlow",
+      "SQL",
+      "Power BI"
+    ],
+    "experience": "3 años aplicando machine learning y análisis de datos en proyectos del sector salud y retail.",
+    "availability": {
+      "from": "2026-06-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Proyectos de impacto social",
+      "Investigación aplicada",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "David Martínez",
+    "position": "Arquitecto de Software",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "Microservicios",
+      "Kafka",
+      "DDD"
+    ],
+    "experience": "12 años diseñando arquitecturas de software complejas para empresas de telecomunicaciones y banca.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-09-30"
+    },
+    "work_load": 24,
+    "preferences": [
+      "Consultoría técnica",
+      "Mentoring",
+      "Proyectos de transformación digital"
+    ]
+  },
+  {
+    "name": "Elena García",
+    "position": "Product Manager",
+    "skills": [
+      "Agile",
+      "Scrum",
+      "Jira",
+      "Roadmapping",
+      "OKRs"
+    ],
+    "experience": "8 años liderando equipos de producto en empresas SaaS, con foco en crecimiento y retención de usuarios.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Liderazgo de equipos",
+      "Startups en fase de crecimiento",
+      "Trabajo híbrido"
+    ]
+  },
+  {
+    "name": "Roberto Sánchez",
+    "position": "Desarrollador Fullstack",
+    "skills": [
+      "Node.js",
+      "React",
+      "MongoDB",
+      "GraphQL",
+      "Express"
+    ],
+    "experience": "5 años desarrollando aplicaciones fullstack para e-commerce y plataformas SaaS.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Trabajo en equipo",
+      "Código limpio",
+      "Metodologías ágiles"
+    ]
+  },
+  {
+    "name": "Patricia Ruiz",
+    "position": "QA Engineer",
+    "skills": [
+      "Selenium",
+      "Cypress",
+      "Jest",
+      "Postman",
+      "BDD"
+    ],
+    "experience": "4 años garantizando la calidad del software mediante pruebas automatizadas y manuales en proyectos de gran escala.",
+    "availability": {
+      "from": "2026-05-15",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Automatización de pruebas",
+      "Trabajo remoto",
+      "Mejora continua de procesos"
+    ]
+  },
+  {
+    "name": "Javier Moreno",
+    "position": "Especialista en Ciberseguridad",
+    "skills": [
+      "Pentesting",
+      "OWASP",
+      "SIEM",
+      "Ethical Hacking",
+      "ISO 27001"
+    ],
+    "experience": "9 años protegiendo infraestructuras críticas y realizando auditorías de seguridad para organismos públicos y banca.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-07-31"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Seguridad ofensiva",
+      "Consultoría",
+      "Formación interna"
+    ]
+  },
+  {
+    "name": "María José Castillo",
+    "position": "Scrum Master",
+    "skills": [
+      "Scrum",
+      "Kanban",
+      "SAFe",
+      "Facilitación",
+      "Gestión del cambio"
+    ],
+    "experience": "6 años facilitando equipos ágiles en empresas de consultoría tecnológica y sector asegurador.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Equipos distribuidos",
+      "Mejora continua",
+      "Cultura ágil"
+    ]
+  },
+  {
+    "name": "Alejandro Vega",
+    "position": "Desarrollador Mobile",
+    "skills": [
+      "React Native",
+      "Flutter",
+      "Swift",
+      "Kotlin",
+      "Firebase"
+    ],
+    "experience": "5 años desarrollando aplicaciones móviles multiplataforma para startups del sector fintech y healthtech.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Apps de consumo masivo",
+      "UX móvil",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "Cristina Navarro",
+    "position": "Data Engineer",
+    "skills": [
+      "Apache Spark",
+      "Airflow",
+      "BigQuery",
+      "dbt",
+      "Python"
+    ],
+    "experience": "4 años construyendo pipelines de datos y arquitecturas lakehouse para empresas del sector energético.",
+    "availability": {
+      "from": "2026-06-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Datos a gran escala",
+      "Cloud",
+      "Proyectos de larga duración"
+    ]
+  },
+  {
+    "name": "Fernando Díaz",
+    "position": "Business Intelligence Analyst",
+    "skills": [
+      "Power BI",
+      "Tableau",
+      "SQL",
+      "Excel avanzado",
+      "DAX"
+    ],
+    "experience": "6 años transformando datos en decisiones de negocio para empresas del sector retail y manufactura.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-08-31"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Visualización de datos",
+      "Reporting ejecutivo",
+      "Trabajo presencial"
+    ]
+  },
+  {
+    "name": "Isabel Herrero",
+    "position": "Desarrolladora Backend",
+    "skills": [
+      "Go",
+      "gRPC",
+      "PostgreSQL",
+      "Redis",
+      "Microservicios"
+    ],
+    "experience": "7 años construyendo servicios de alto rendimiento en Go para plataformas de streaming y juegos online.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Sistemas distribuidos",
+      "Rendimiento",
+      "Open source"
+    ]
+  },
+  {
+    "name": "Pablo Jiménez",
+    "position": "Machine Learning Engineer",
+    "skills": [
+      "PyTorch",
+      "MLflow",
+      "Kubernetes",
+      "Python",
+      "Feature Engineering"
+    ],
+    "experience": "5 años llevando modelos de machine learning a producción en entornos cloud para empresas de transporte y logística.",
+    "availability": {
+      "from": "2026-05-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "MLOps",
+      "Investigación aplicada",
+      "Proyectos de impacto"
+    ]
+  },
+  {
+    "name": "Lucía Gómez",
+    "position": "Technical Writer",
+    "skills": [
+      "Documentación técnica",
+      "Confluence",
+      "Markdown",
+      "Swagger",
+      "API Docs"
+    ],
+    "experience": "3 años redactando documentación técnica para productos de software B2B y APIs públicas.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Trabajo remoto",
+      "Proyectos de software",
+      "Claridad y comunicación"
+    ]
+  },
+  {
+    "name": "Andrés Molina",
+    "position": "Cloud Architect",
+    "skills": [
+      "Azure",
+      "AWS",
+      "GCP",
+      "Terraform",
+      "Seguridad cloud"
+    ],
+    "experience": "10 años diseñando soluciones cloud multi-proveedor para empresas del IBEX 35 y organismos públicos.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-06-30"
+    },
+    "work_load": 16,
+    "preferences": [
+      "Arquitectura empresarial",
+      "Consultoría estratégica",
+      "Trabajo presencial"
+    ]
+  },
+  {
+    "name": "Nuria Blanco",
+    "position": "Diseñadora Gráfica Digital",
+    "skills": [
+      "Adobe Illustrator",
+      "Photoshop",
+      "After Effects",
+      "Figma",
+      "Branding"
+    ],
+    "experience": "5 años creando identidades de marca y activos visuales digitales para agencias de publicidad.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Proyectos creativos",
+      "Branding",
+      "Trabajo híbrido"
+    ]
+  },
+  {
+    "name": "Tomás Serrano",
+    "position": "Desarrollador Fullstack",
+    "skills": [
+      "Vue.js",
+      "Laravel",
+      "MySQL",
+      "Docker",
+      "REST APIs"
+    ],
+    "experience": "6 años desarrollando soluciones web para el sector inmobiliario y legal.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Equipos pequeños",
+      "Autonomía",
+      "Metodologías ágiles"
+    ]
+  },
+  {
+    "name": "Carmen Ortega",
+    "position": "Data Analyst",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Estadística",
+      "Excel avanzado"
+    ],
+    "experience": "3 años realizando análisis de datos y generando insights para el área de marketing y ventas en empresas de e-commerce.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-09-30"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Trabajo remoto",
+      "Análisis exploratorio",
+      "Visualización de datos"
+    ]
+  },
+  {
+    "name": "Sergio Vargas",
+    "position": "Especialista en Automatización RPA",
+    "skills": [
+      "UiPath",
+      "Power Automate",
+      "Blue Prism",
+      "Python",
+      "VBA"
+    ],
+    "experience": "4 años automatizando procesos de negocio en banca y seguros mediante herramientas RPA.",
+    "availability": {
+      "from": "2026-04-15",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Eficiencia operativa",
+      "Transformación digital",
+      "Trabajo presencial"
+    ]
+  },
+  {
+    "name": "Marta Iglesias",
+    "position": "Frontend Developer",
+    "skills": [
+      "Angular",
+      "TypeScript",
+      "SASS",
+      "RxJS",
+      "Jest"
+    ],
+    "experience": "4 años desarrollando aplicaciones empresariales con Angular para el sector asegurador y bancario.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Proyectos de largo plazo",
+      "Arquitectura frontend",
+      "Trabajo híbrido"
+    ]
+  },
+  {
+    "name": "Óscar Peña",
+    "position": "SRE (Site Reliability Engineer)",
+    "skills": [
+      "Linux",
+      "Prometheus",
+      "Grafana",
+      "Python",
+      "Ansible"
+    ],
+    "experience": "8 años garantizando la disponibilidad y rendimiento de plataformas críticas en empresas de telecomunicaciones.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Alta disponibilidad",
+      "Observabilidad",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "Raquel Fuentes",
+    "position": "Analista Funcional",
+    "skills": [
+      "Análisis de requisitos",
+      "UML",
+      "BPMN",
+      "Jira",
+      "SQL"
+    ],
+    "experience": "7 años traduciendo necesidades de negocio en requisitos técnicos para equipos de desarrollo en el sector público.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Administración pública",
+      "Trabajo presencial",
+      "Gestión documental"
+    ]
+  },
+  {
+    "name": "Hugo Castro",
+    "position": "Desarrollador Backend",
+    "skills": [
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Redis",
+      "Sidekiq",
+      "REST APIs"
+    ],
+    "experience": "6 años construyendo APIs y servicios backend para plataformas de marketplace y educación online.",
+    "availability": {
+      "from": "2026-05-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Trabajo remoto",
+      "Proyectos de impacto social",
+      "Código limpio"
+    ]
+  },
+  {
+    "name": "Silvia Campos",
+    "position": "Growth Hacker / Marketing Digital",
+    "skills": [
+      "SEO",
+      "SEM",
+      "Google Analytics",
+      "A/B Testing",
+      "CRM"
+    ],
+    "experience": "5 años impulsando el crecimiento de startups mediante estrategias de marketing digital y experimentación.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Startups",
+      "Trabajo remoto",
+      "Experimentos de crecimiento"
+    ]
+  },
+  {
+    "name": "Iván Delgado",
+    "position": "Especialista en Blockchain",
+    "skills": [
+      "Solidity",
+      "Ethereum",
+      "Web3.js",
+      "Smart Contracts",
+      "Hardhat"
+    ],
+    "experience": "4 años desarrollando contratos inteligentes y DApps para proyectos de finanzas descentralizadas.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Web3",
+      "Open source",
+      "Innovación tecnológica"
+    ]
+  },
+  {
+    "name": "Verónica Santos",
+    "position": "Consultora ERP",
+    "skills": [
+      "SAP S/4HANA",
+      "SAP FI/CO",
+      "ABAP",
+      "SAP MM",
+      "Gestión de proyectos"
+    ],
+    "experience": "10 años implantando y personalizando soluciones SAP en empresas multinacionales del sector industrial.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-08-31"
+    },
+    "work_load": 24,
+    "preferences": [
+      "Proyectos de implantación",
+      "Trabajo presencial",
+      "Consultoría empresarial"
+    ]
+  },
+  {
+    "name": "Diego Reyes",
+    "position": "Desarrollador de Videojuegos",
+    "skills": [
+      "Unity",
+      "C#",
+      "Unreal Engine",
+      "Blender",
+      "Shaders"
+    ],
+    "experience": "3 años desarrollando videojuegos indie y experiencias interactivas para plataformas móviles y PC.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Proyectos creativos",
+      "Trabajo remoto",
+      "Innovación en entretenimiento"
+    ]
+  },
+  {
+    "name": "Natalia Prieto",
+    "position": "Especialista en Accesibilidad Web",
+    "skills": [
+      "WCAG 2.1",
+      "ARIA",
+      "HTML5",
+      "Screen Readers",
+      "Auditorías de accesibilidad"
+    ],
+    "experience": "5 años mejorando la accesibilidad digital de plataformas gubernamentales y servicios financieros.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Impacto social",
+      "Inclusión digital",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "Álvaro Gil",
+    "position": "Desarrollador Fullstack",
+    "skills": [
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "experience": "4 años construyendo aplicaciones web modernas con Next.js y NestJS para el sector turístico y hostelería.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Startups",
+      "Trabajo remoto",
+      "Arquitecturas modernas"
+    ]
+  },
+  {
+    "name": "Beatriz Medina",
+    "position": "Gestora de Proyectos IT",
+    "skills": [
+      "PMP",
+      "PRINCE2",
+      "MS Project",
+      "Gestión de riesgos",
+      "Presupuestos"
+    ],
+    "experience": "11 años gestionando proyectos tecnológicos de gran envergadura para organismos europeos y grandes corporaciones.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Proyectos internacionales",
+      "Gestión de equipos grandes",
+      "Trabajo presencial"
+    ]
+  },
+  {
+    "name": "Rubén Esteban",
+    "position": "Especialista en IoT",
+    "skills": [
+      "Arduino",
+      "Raspberry Pi",
+      "MQTT",
+      "C++",
+      "AWS IoT"
+    ],
+    "experience": "5 años diseñando soluciones IoT para automatización industrial y ciudades inteligentes.",
+    "availability": {
+      "from": "2026-05-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Innovación tecnológica",
+      "Proyectos de ciudad inteligente",
+      "Trabajo híbrido"
+    ]
+  },
+  {
+    "name": "Lorena Pascual",
+    "position": "AI Prompt Engineer",
+    "skills": [
+      "Prompt Engineering",
+      "LangChain",
+      "OpenAI API",
+      "Python",
+      "RAG"
+    ],
+    "experience": "2 años diseñando sistemas basados en LLMs y pipelines de IA generativa para automatización de contenido y atención al cliente.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "IA generativa",
+      "Innovación",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "Gonzalo Herrera",
+    "position": "DBA (Database Administrator)",
+    "skills": [
+      "Oracle",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Optimización de consultas"
+    ],
+    "experience": "14 años administrando y optimizando bases de datos críticas para el sector bancario y asegurador.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 16,
+    "preferences": [
+      "Alta disponibilidad",
+      "Rendimiento de bases de datos",
+      "Trabajo presencial"
+    ]
+  },
+  {
+    "name": "Claudia Ibáñez",
+    "position": "Especialista en E-learning",
+    "skills": [
+      "Moodle",
+      "Articulate Storyline",
+      "Instructional Design",
+      "SCORM",
+      "Gamificación"
+    ],
+    "experience": "6 años diseñando experiencias formativas digitales para corporaciones y plataformas de educación online.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-09-30"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Educación digital",
+      "Proyectos de impacto social",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "Mario Espinosa",
+    "position": "Desarrollador Backend",
+    "skills": [
+      "Rust",
+      "WebAssembly",
+      "gRPC",
+      "PostgreSQL",
+      "Linux"
+    ],
+    "experience": "6 años desarrollando sistemas de bajo nivel y servicios de alto rendimiento con Rust para plataformas de trading y seguridad.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Sistemas críticos",
+      "Rendimiento extremo",
+      "Open source"
+    ]
+  },
+  {
+    "name": "Pilar Soto",
+    "position": "Consultora de Transformación Digital",
+    "skills": [
+      "Change Management",
+      "Estrategia digital",
+      "Design Thinking",
+      "Lean",
+      "Comunicación ejecutiva"
+    ],
+    "experience": "13 años acompañando a grandes organizaciones en procesos de transformación digital y cultural.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-07-31"
+    },
+    "work_load": 24,
+    "preferences": [
+      "Alta dirección",
+      "Cambio organizacional",
+      "Trabajo presencial"
+    ]
+  },
+  {
+    "name": "Enrique Cano",
+    "position": "Desarrollador Fullstack Junior",
+    "skills": [
+      "React",
+      "Node.js",
+      "JavaScript",
+      "CSS3",
+      "Git"
+    ],
+    "experience": "1 año de experiencia tras bootcamp intensivo, habiendo participado en proyectos de desarrollo web para ONG y pequeñas empresas.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Aprendizaje continuo",
+      "Trabajo en equipo",
+      "Proyectos de impacto social"
+    ]
+  }
+]
