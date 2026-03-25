@@ -280,6 +280,7 @@ if tab_resumen is not None:
             st.markdown("#### Objetivos")
             for obj in objetivos:
                 st.markdown(f"- {obj}")
+            st.divider()
 
         assignments_resumen = plan_data.get("assignments", [])
         if assignments_resumen:
@@ -296,8 +297,7 @@ if tab_resumen is not None:
                     "Prioridad":   a.get("priority", "—"),
                 })
             st.dataframe(pd.DataFrame(task_rows), use_container_width=True, hide_index=True)
-
-        st.divider()
+            st.divider()
 
         st.markdown("#### Equipo")
         team_rows = [
