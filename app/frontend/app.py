@@ -2,6 +2,8 @@
 import json
 import os
 import tempfile
+import threading
+import time
 from pathlib import Path
 
 import fitz  # pymupdf
@@ -46,11 +48,24 @@ st.markdown("""
     section[data-testid="stSidebar"] .stFileUploader label {
         display: none !important;
     }
+    @keyframes fadepulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+    }
 </style>
 """, unsafe_allow_html=True)
 
 # ── Backend URL ───────────────────────────────────────────────────────────────
 API_URL = "http://localhost:8080/v1/agente/"
+
+LOADING_MESSAGES = [
+    ("🔍", "Analizando la descripción del proyecto..."),
+    ("🎯", "Definiendo objetivos estratégicos..."),
+    ("⚙️", "Desglosando las tareas técnicas..."),
+    ("👥", "Asignando el equipo óptimo..."),
+    ("📊", "Calculando tiempos y presupuesto..."),
+    ("✅", "Consolidando el plan de proyecto..."),
+]
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -110,6 +125,7 @@ def _read_pdf_text(uploaded_files) -> tuple[str, str]:
 st.title("Organizador de equipos y proyectos")
 st.markdown("*Acelera la puesta en marcha de proyectos: sube tu idea y encuentra al equipo idóneo*")
 st.divider()
+loading_placeholder = st.empty()
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -184,22 +200,50 @@ with st.sidebar:
             "num_workers": st.session_state.get("num_workers", 1),
         }
 
-        with st.spinner("Consultando al modelo..."):
+        result: dict = {"data": None, "error": None, "done": False}
+
+        def _call_api():
             try:
-                respuesta = requests.post(API_URL, json=payload)
-                print(f"[RESPONSE STATUS] {respuesta.status_code}")
-                print(f"[RESPONSE TEXT] {respuesta.text}")
-                print(f"[RESPONSE HEADERS] {respuesta.headers}")
-                plan_data = respuesta.json()
-                print(f"\n[API RESPONSE]\n{json.dumps(plan_data, ensure_ascii=False, indent=2)}\n")
-                if "error" in plan_data:
-                    st.error(f"⚠️ El agente devolvió un error: {plan_data['error']}")
-                else:
-                    st.session_state.plan_data = plan_data
-                    st.session_state.plan_generado = True
-            except Exception as e:
-                st.error(f"⚠️ Error al conectar con la API: {e}")
-                print(f"[API ERROR] {e}")
+                r = requests.post(API_URL, json=payload)
+                result["data"] = r.json()
+                print(f"[RESPONSE STATUS] {r.status_code}")
+                print(f"\n[API RESPONSE]\n{json.dumps(result['data'], ensure_ascii=False, indent=2)}\n")
+            except Exception as exc:
+                result["error"] = str(exc)
+                print(f"[API ERROR] {exc}")
+            finally:
+                result["done"] = True
+
+        threading.Thread(target=_call_api, daemon=True).start()
+
+        idx = 0
+        while not result["done"]:
+            icon, msg = LOADING_MESSAGES[idx % len(LOADING_MESSAGES)]
+            with loading_placeholder.container():
+                st.markdown(f"""
+                <div style="display:flex;flex-direction:column;align-items:center;
+                            justify-content:center;min-height:55vh;gap:1.5rem;text-align:center;">
+                    <div style="font-size:3.5rem;">{icon}</div>
+                    <div style="font-size:1.3rem;font-weight:600;
+                                animation:fadepulse 2s ease-in-out infinite;">{msg}</div>
+                    <div style="color:rgba(255,255,255,0.45);font-size:0.85rem;">
+                        Esto puede tardar unos minutos...
+                    </div>
+                </div>
+                """, unsafe_allow_html=True)
+            time.sleep(2.5)
+            idx += 1
+
+        loading_placeholder.empty()
+
+        if result["error"]:
+            st.error(f"⚠️ Error al conectar con la API: {result['error']}")
+        elif result["data"] and "error" in result["data"]:
+            st.error(f"⚠️ El agente devolvió un error: {result['data']['error']}")
+        else:
+            st.session_state.plan_data = result["data"]
+            st.session_state.plan_generado = True
+            st.rerun()
 
     _plan_for_download = st.session_state.get("plan_data")
     if _plan_for_download:
