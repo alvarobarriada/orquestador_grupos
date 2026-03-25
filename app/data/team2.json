@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Sofía Wróbel",
+    "position": "Desarrolladora Frontend",
+    "skills": [
+      "Svelte",
+      "JavaScript",
+      "WebGL",
+      "Three.js",
+      "CSS animations"
+    ],
+    "experience": "2 años como freelance construyendo experiencias web interactivas y visualmente intensas para clientes de moda y arte.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-05-31"
+    },
+    "work_load": 8,
+    "preferences": [
+      "Proyectos creativos",
+      "Trabajo 100% remoto",
+      "Contratos cortos"
+    ]
+  },
+  {
+    "name": "Kwame Asante",
+    "position": "Ingeniero de Datos",
+    "skills": [
+      "Apache Flink",
+      "Kafka",
+      "Scala",
+      "Snowflake",
+      "dbt"
+    ],
+    "experience": "9 años construyendo plataformas de datos en tiempo real para telecomunicaciones en Ghana, Reino Unido y España.",
+    "availability": {
+      "from": "2026-07-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Streaming de datos",
+      "Equipos internacionales",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "Rosario Peñaloza",
+    "position": "Analista de Negocio",
+    "skills": [
+      "Análisis de requisitos",
+      "Excel avanzado",
+      "Power BI",
+      "Entrevistas a stakeholders",
+      "BPMN"
+    ],
+    "experience": "15 años como analista en el sector público colombiano y español, especializada en digitalización de trámites administrativos.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-06-30"
+    },
+    "work_load": 16,
+    "preferences": [
+      "Trabajo presencial",
+      "Sector público",
+      "Estabilidad contractual"
+    ]
+  },
+  {
+    "name": "Timur Bekov",
+    "position": "Investigador en IA",
+    "skills": [
+      "PyTorch",
+      "Transformers",
+      "RLHF",
+      "Python",
+      "LaTeX"
+    ],
+    "experience": "4 años de doctorado en NLP en la Universidad Politécnica de Madrid, con publicaciones en ACL y NeurIPS.",
+    "availability": {
+      "from": "2026-09-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Investigación aplicada",
+      "Publicaciones académicas",
+      "Flexibilidad horaria"
+    ]
+  },
+  {
+    "name": "Mireille Fontaine",
+    "position": "Gestora de Proyectos",
+    "skills": [
+      "PMP",
+      "MS Project",
+      "Gestión de riesgos",
+      "Comunicación ejecutiva",
+      "Presupuestos"
+    ],
+    "experience": "20 años gestionando megaproyectos de infraestructura tecnológica en Francia, Bélgica y España con equipos de más de 50 personas.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-04-30"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Grandes corporaciones",
+      "Trabajo presencial",
+      "Proyectos de más de 1M€"
+    ]
+  },
+  {
+    "name": "Dani Herráiz",
+    "position": "Desarrollador Backend",
+    "skills": [
+      "Elixir",
+      "Phoenix",
+      "PostgreSQL",
+      "RabbitMQ",
+      "Linux"
+    ],
+    "experience": "3 años trabajando en un equipo distribuido de producto desarrollando APIs de alta concurrencia con Elixir.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Open source",
+      "Trabajo asíncrono",
+      "Documentación exhaustiva"
+    ]
+  },
+  {
+    "name": "Yuki Tanaka",
+    "position": "Diseñadora de Producto",
+    "skills": [
+      "Figma",
+      "Design Systems",
+      "Motion Design",
+      "User Testing",
+      "Accessibility"
+    ],
+    "experience": "6 años diseñando sistemas de diseño y productos digitales en Japón y remotamente para startups europeas de healthtech.",
+    "availability": {
+      "from": "2026-05-15",
+      "to": "2026-08-15"
+    },
+    "work_load": 24,
+    "preferences": [
+      "Design systems",
+      "Equipos pequeños y ágiles",
+      "Trabajo asíncrono"
+    ]
+  },
+  {
+    "name": "Bernardo Quijano",
+    "position": "Administrador de Sistemas",
+    "skills": [
+      "Linux",
+      "Bash",
+      "Ansible",
+      "VMware",
+      "Active Directory"
+    ],
+    "experience": "18 años administrando sistemas en entornos on-premise para hospitales públicos y universidades españolas.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 16,
+    "preferences": [
+      "Trabajo presencial en Madrid",
+      "Entornos estables",
+      "Sin viajes"
+    ]
+  },
+  {
+    "name": "Amara Diallo",
+    "position": "Especialista en Ciberseguridad",
+    "skills": [
+      "Red Team",
+      "OSINT",
+      "Malware Analysis",
+      "Splunk",
+      "MITRE ATT&CK"
+    ],
+    "experience": "5 años en operaciones de red team y análisis forense para bancos centrales y organismos de defensa en África occidental.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Proyectos de alto impacto",
+      "Trabajo remoto",
+      "Equipos con cultura de seguridad"
+    ]
+  },
+  {
+    "name": "Valentín Orozco",
+    "position": "Desarrollador Fullstack Junior",
+    "skills": [
+      "React",
+      "Express",
+      "MySQL",
+      "Git",
+      "Tailwind CSS"
+    ],
+    "experience": "8 meses de experiencia profesional tras FP Superior en DAW, con proyecto final premiado en la categoría de accesibilidad.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Mentoring activo",
+      "Aprendizaje continuo",
+      "Presencial o híbrido"
+    ]
+  },
+  {
+    "name": "Ingrid Haakonsen",
+    "position": "Consultora Cloud",
+    "skills": [
+      "AWS",
+      "Well-Architected Framework",
+      "FinOps",
+      "Terraform",
+      "Python"
+    ],
+    "experience": "11 años como arquitecta cloud certificada (AWS Solutions Architect Professional) trabajando con empresas nórdicas y españolas del sector energético.",
+    "availability": {
+      "from": "2026-06-01",
+      "to": "2026-09-30"
+    },
+    "work_load": 32,
+    "preferences": [
+      "FinOps y optimización de costes",
+      "Consultoría puntual",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "Ferran Puig",
+    "position": "Técnico en Automatización de Pruebas",
+    "skills": [
+      "Playwright",
+      "k6",
+      "Python",
+      "Jenkins",
+      "Contract Testing"
+    ],
+    "experience": "7 años especializándose en pruebas de rendimiento y contract testing en equipos de plataforma para empresas de e-commerce de alto tráfico.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-07-31"
+    },
+    "work_load": 40,
+    "preferences": [
+      "Cultura de calidad",
+      "Trabajo híbrido en Barcelona",
+      "Equipos de plataforma"
+    ]
+  },
+  {
+    "name": "Zoe Ndlovu",
+    "position": "Especialista en Sostenibilidad Digital",
+    "skills": [
+      "Green IT",
+      "Carbon footprint analysis",
+      "Diseño sostenible",
+      "UX Research",
+      "Reporting ESG"
+    ],
+    "experience": "4 años midiendo y reduciendo el impacto ambiental de productos digitales en ONGs y empresas comprometidas con la sostenibilidad.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 20,
+    "preferences": [
+      "Proyectos con propósito",
+      "Impacto medioambiental",
+      "Trabajo remoto"
+    ]
+  },
+  {
+    "name": "Héctor Villanueva",
+    "position": "Arquitecto de Datos",
+    "skills": [
+      "Databricks",
+      "Delta Lake",
+      "Azure Synapse",
+      "PySpark",
+      "Modelado dimensional"
+    ],
+    "experience": "13 años diseñando plataformas de datos empresariales para aseguradoras y fondos de inversión, liderando equipos de hasta 12 ingenieros.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 24,
+    "preferences": [
+      "Liderazgo técnico",
+      "Proyectos de larga duración",
+      "Trabajo híbrido"
+    ]
+  },
+  {
+    "name": "Priya Nair",
+    "position": "Desarrolladora Mobile",
+    "skills": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Riverpod",
+      "CI/CD móvil"
+    ],
+    "experience": "3 años desarrollando apps Flutter desde cero hasta producción para startups de educación financiera en India y el mercado europeo.",
+    "availability": {
+      "from": "2026-04-01",
+      "to": "2026-12-31"
+    },
+    "work_load": 32,
+    "preferences": [
+      "Flutter y ecosistema Dart",
+      "Startups",
+      "Trabajo remoto"
+    ]
+  }
+]
