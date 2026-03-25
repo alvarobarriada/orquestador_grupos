@@ -39,3 +39,28 @@ streamlit run frontend/app.py
 ```
 
 Frontend disponible normalmente en: `http://localhost:8501`
+
+## Ejecución con AgentCore y Streamlit
+
+Para conectar ambos servicios ejecuta estos comandos colocado en la carpeta `app`:
+
+1. Depliegue del sistema en AgentCore Runtime (cada vez que se hagan cambios en algun fichero de la carpeta `backend`):
+```bash
+python setup_agentcore.py
+```
+En caso de que el despliegue sea correcto, se mostrara al final el identificador ARN del componente desplegado
+
+```bash
+...
+Agente desplegado: arn:aws:bedrock-agentcore:eu-west-1:...:runtime/orquestador_grupos_agent_AC-...
+```
+
+2. Necesitaras incluir el fallback al cargar la variable AGENTCORE_AGENT_ARN del .env en el fichero `frontend/streamlit_with_agentcore.py`
+```python
+AGENTCORE_AGENT_ARN = os.getenv("AGENTCORE_AGENT_ARN", "arn:aws:bedrock-agentcore:eu-west-1:...:runtime/orquestador_grupos_agent_AC-...")
+```
+
+3. Ejecutar el frontend de streamlit ubicados desde la carpeta `app`:
+```bash
+streamlit run frontend/streamlit_with_agentcore.py
+```
