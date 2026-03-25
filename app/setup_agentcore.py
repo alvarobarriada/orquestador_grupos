@@ -12,7 +12,7 @@ boto_session = Session()
 agentcore_runtime = Runtime()
 
 # Nombre del agente (debe ser único)
-AGENT_NAME = "orquestador_grupos_agent"
+AGENT_NAME = "orquestador_grupos_agent_AC"
 
 # Configurar el despliegue
 response = agentcore_runtime.configure(
