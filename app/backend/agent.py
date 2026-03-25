@@ -55,10 +55,11 @@ PROMPT_ASIGNAR = (
     "Bajo ningún concepto puedes superar ese número total de personas únicas en todas las asignaciones combinadas. "
     "Si el límite es 1, solo puede aparecer 1 persona en todo el plan. Si es 3, un máximo de 3 personas distintas. "
     "Tu tarea: "
-    "1. Analiza el campo 'conocimientos' de cada tarea. "
-    "2. Realiza el match óptimo respetando el límite: asigna nombres de personas reales a cada tarea basándote en sus habilidades y experiencia. "
+    "1. Revisa los miembros disponibles, ya que puede ser que no todos esten disponibles durante el periodo de desarrollo. "
+    "2. Analiza el campo 'conocimientos' de cada tarea. "
+    "3. Realiza el match óptimo respetando el límite: asigna nombres de personas reales a cada tarea basándote en sus habilidades y experiencia. "
     "Si el límite no permite cubrir todos los conocimientos, indica el riesgo pero respeta el límite. "
-    "3. Si una tarea requiere más personas de las disponibles en el límite, señala esta carencia como un riesgo crítico. "
+    "4. Si una tarea requiere más personas de las disponibles en el límite, señala esta carencia como un riesgo crítico. "
     "Entrega un listado estructurado de Tarea -> Responsables Asignados."
 )
 
