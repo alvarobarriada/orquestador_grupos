@@ -22,6 +22,10 @@ st.markdown("""
     [data-testid="stFileUploaderDropzone"] button span {
         font-size: 0 !important; visibility: hidden;
     }
+    [data-testid="stFileUploaderDropzone"] {
+        background: transparent !important;
+        border: none !important;
+    }
     .empty-state {
         display: flex; flex-direction: column; align-items: center;
         justify-content: center; min-height: 40vh; gap: 12px; opacity: 0.45;
@@ -29,11 +33,18 @@ st.markdown("""
     .empty-state span { font-size: 3rem; }
     .empty-state p { font-size: 1rem; margin: 0; }
     section[data-testid="stSidebar"] h4 {
-        font-size: 1.1rem !important;
-        font-weight: 700 !important;
-        margin-bottom: 0.4rem !important;
-        margin-top: 1.2rem !important;
-        letter-spacing: 0.01em;
+        font-size: 1.2rem !important;
+        font-weight: 800 !important;
+        margin-bottom: 0 !important;
+        margin-top: 0.8rem !important;
+        letter-spacing: 0.02em;
+        color: white !important;
+    }
+    section[data-testid="stSidebar"] .stFileUploader {
+        margin-top: 0 !important;
+    }
+    section[data-testid="stSidebar"] .stFileUploader label {
+        display: none !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -103,13 +114,15 @@ st.divider()
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
 
+    _reset = st.session_state.get("_uploader_reset", 0)
+
     # ── Sube tu idea (PDF/docs del proyecto) ──
     st.markdown("#### Sube tu idea")
     idea_files = st.file_uploader(
         label="",
         accept_multiple_files=True,
         type=["pdf", "txt", "doc", "docx", "json"],
-        key="idea_uploader",
+        key=f"idea_uploader_{_reset}",
         label_visibility="hidden",
     )
 
@@ -143,7 +156,7 @@ with st.sidebar:
         label="",
         accept_multiple_files=False,
         type=["json", "txt", "doc", "docx", "pdf"],
-        key="team_uploader",
+        key=f"team_uploader_{_reset}",
         label_visibility="hidden",
     )
 
@@ -159,7 +172,7 @@ with st.sidebar:
         st.session_state.pop("team_text", None)
         st.session_state.pop("_team_file_key", None)
 
-    num_workers = st.slider(label="Número de trabajadores", min_value=1, max_value=50,
+    num_workers = st.slider(label="Número de trabajadores", min_value=1, max_value=10,
                             value=st.session_state.get("num_workers", 5))
     st.session_state.num_workers = num_workers
 
@@ -196,7 +209,7 @@ with st.sidebar:
             data=plan_text,
             file_name="planificacion.json",
             on_click="ignore",
-            type="primary",
+            type="secondary",
             icon=":material/download:",
             use_container_width=True,
         )
@@ -210,6 +223,13 @@ with st.sidebar:
             icon=":material/picture_as_pdf:",
             use_container_width=True,
         )
+        st.divider()
+        if st.button("Limpiar", icon=":material/refresh:", use_container_width=True):
+            for key in ["plan_data", "plan_generado", "idea_text", "idea_json",
+                        "_idea_files_key", "team_text", "_team_file_key"]:
+                st.session_state.pop(key, None)
+            st.session_state._uploader_reset = _reset + 1
+            st.rerun()
 
 # ── Main area: tabs ───────────────────────────────────────────────────────────
 plan_generado = st.session_state.get("plan_generado", False)
@@ -247,11 +267,11 @@ if tab_inicio is not None:
 # ── Tab Resumen ───────────────────────────────────────────────────────────────
 if tab_resumen is not None:
     with tab_resumen:
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Proyecto",        plan_data["project_title"])
-        col2.metric("Presupuesto Est.", f"{plan_data['total_budget']:,.0f} €")
-        col3.metric("Fecha de Entrega", plan_data["estimated_completion_date"])
-        col4.metric("Líder",            plan_data.get("project_leader", "—"))
+        st.markdown(f"### {plan_data['project_title']}")
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Presupuesto Est.", f"{plan_data['total_budget']:,.0f} €")
+        col2.metric("Fecha de Entrega", plan_data["estimated_completion_date"])
+        col3.metric("Líder",            plan_data.get("project_leader", "—"))
 
         st.divider()
 
