@@ -49,7 +49,14 @@ def enforce_worker_limit(plan: dict, num_workers: int) -> dict:
             a["task_name"] for a in filtered_assignments if m["name"] in a["assigned_to"]
         ]
 
-    return {**plan, "assignments": filtered_assignments, "team_members": filtered_team}
+    # Ensure project_leader is one of the remaining team members
+    valid_names = {m["name"] for m in filtered_team}
+    leader = plan.get("project_leader", "")
+    if leader not in valid_names and filtered_team:
+        leader = max(filtered_team, key=lambda m: m.get("total_hours", 0))["name"]
+        print(f"[LEADER FIX] '{plan.get('project_leader')}' not in team, replaced with '{leader}'")
+
+    return {**plan, "assignments": filtered_assignments, "team_members": filtered_team, "project_leader": leader}
 
 
 # Inicializa una instancia de la aplicación
