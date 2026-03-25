@@ -1,0 +1,7 @@
+strands-agents
+strands-agents-tools
+streamlit
+fastapi
+uvicorn
+requests
+python-dotenv
