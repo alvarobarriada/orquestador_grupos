@@ -6,7 +6,7 @@ from strands.models import BedrockModel
 from strands.multiagent import GraphBuilder
 from typing import List
 
-load_dotenv() 
+load_dotenv()
 
 REGION_NAME = os.getenv("AWS_REGION", "eu-west-1")
 MODEL_ID = os.getenv("BEDROCK_MODEL_ID", "eu.amazon.nova-pro-v1:0")
@@ -102,7 +102,7 @@ agente_asignar = Agent(
     model=bedrock_model,
     system_prompt=PROMPT_ASIGNAR,
 )
-
+# hook para debugear y ver que campos que llegan
 agente_final = Agent(
     name="agente_final",
     model=bedrock_model,
@@ -127,3 +127,5 @@ builder.set_node_timeout(300)
 graph = builder.build()
 print("Graph construido")
 
+def get_graph():
+    return graph
