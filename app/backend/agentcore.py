@@ -106,37 +106,32 @@ def strands_agent_bedrock(req: Any):
             "error": repr(exc),
         }
 
-    partes = {}
+    respuesta_agent_final = None
 
     try:
-        respuesta_agent_objetivos = response.results["agente_objetivo"].result.message["content"][0]["text"]
-        partes["agente_objetivo"] = respuesta_agent_objetivos
+        respuesta_agent_final = response.results["agente_final"].result.structured_output
     except Exception as exc:
-        print("No se pudo extraer agente_objetivo:", repr(exc))
+        print("No se pudo extraer agente_final.structured_output:", repr(exc))
 
-    try:
-        respuesta_agent_tareas = response.results["agente_tareas"].result.message["content"][0]["text"]
-        partes["agente_tareas"] = respuesta_agent_tareas
-    except Exception as exc:
-        print("No se pudo extraer agente_tareas:", repr(exc))
+    if respuesta_agent_final is not None:
+        return respuesta_agent_final.model_dump()
 
-    try:
-        respuesta_agent_asignar = response.results["agente_asignar"].result.message["content"][0]["text"]
-        partes["agente_asignar"] = respuesta_agent_asignar
-    except Exception as exc:
-        print("No se pudo extraer agente_asignar:", repr(exc))
+    # Fallback de diagnostico si el structured output no llega.
+    partes = []
+    for node_name in ("agente_objetivo", "agente_tareas", "agente_asignar", "agente_final"):
+        try:
+            text = response.results[node_name].result.message["content"][0]["text"]
+            if isinstance(text, str) and text.strip():
+                partes.append(f"[{node_name}]\n{text}")
+        except Exception as exc:
+            print(f"No se pudo extraer texto de {node_name}:", repr(exc))
 
-    try:
-        respuesta_agent_final = response.results["agente_final"].result.message["content"][0]["text"]
-        partes["agente_final"] = respuesta_agent_final
-    except Exception as exc:
-        print("No se pudo extraer agente_final:", repr(exc))
-
-    texto_final = "\n\n".join(partes.values())
-    if not texto_final:
-        print("Respuesta sin contenido parseable, devolviendo objeto serializado")
-        texto_final = str(response)
-    return {"ok": True, "respuesta": texto_final}
+    return {
+        "ok": False,
+        "error_stage": "final_structured_output_missing",
+        "error": "agente_final no devolvio structured_output valido",
+        "fallback_text": "\n\n".join(partes) if partes else str(response),
+    }
 
 
 
